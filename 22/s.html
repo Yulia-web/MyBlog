@@ -1,0 +1,615 @@
+<html>
+<head>
+<script>
+function perevirka()
+{
+let log = document.forms.reg;
+var log1 = log.pass.value;
+var log2 = log.Repass.value;
+for(var i = 0;i<log1.length;i++)
+{
+if(log1[i] != log2[i])
+{
+alert("password dont are the same");
+break;
+}
+}
+if(log.login.value.length == 0)
+{
+alert("Login is empty");
+}
+if(log.pass.value.length == 0)
+{
+alert("Password is empty");
+}
+var len = log.pass.value.length; 
+alert(len);
+if(len > 5 && len < 16)
+{
+alert("login is too long or too short");
+}
+let symbol = "!@#$?/\\'\" }{[]:;^%+=-()";
+for(let i = 0;i<log.pass.value.length;i++)
+{
+let spF = false;
+for(var j = 0;j<symbol.length;j++)
+{
+if(log1[i] == symbol[j])
+{
+alert("Password special symb found");
+spF = true;
+break;
+}
+}
+if(spF)
+         break;	
+}
+if(log.age.value < 0)
+{
+alert("Age dont can be smoller 0");
+}
+var woman = log.W.checked;
+var man = log.M.checked;
+if(woman == true && man == true)
+{
+alert("you cannot select two genders at a time");
+}
+
+}  
+</script>
+<style>
+#heder
+{
+background-color: white;
+height: 80px;
+width: 100%;
+}
+body
+{
+background-color: #f2f2f2;
+}
+#but
+{
+font-size: 14px;
+border: medium none; 
+background-image: none; 
+width: 170px;
+height: 40px;
+background-color: white;
+}
+p
+{
+font: normal small-caps 120%/120% fantasy 
+font-size: 10px;
+}
+#f1
+{
+height: 100%;
+width: 30%;
+position: absolute;
+}
+#body
+{
+position: relative;
+width: 1000px;
+height: 100%;
+margin: auto;
+}
+.layer1
+{
+    float: left; 
+}
+a
+{
+color: black;
+text-decoration: none;
+}
+#blok2
+{
+position: absolute;
+text-align: center;
+width: 400px;
+height: 380px;
+margin-left: 500px;
+}
+#block3
+{
+position: absolute;
+width: 950px;
+height: 300px;
+background-image: url(111.png);
+margin-top: 480px;
+}
+#k1
+{
+text-align: center;
+margin-left: 20px;
+margin-top: 440px;
+position: absolute;
+width: 260px;
+height: 120px;
+box-shadow: 7px 7px 5px rgba(0,0,0,0.6);
+position: absolute;
+background-color: white;
+color: black;
+}
+#k2
+{
+text-align: center;
+margin-left: 350px;
+margin-top: 440px;
+position: absolute;
+width: 260px;
+height: 120px;
+box-shadow: 7px 7px 5px rgba(0,0,0,0.6);
+position: absolute;
+background-color: white;
+color: black;
+}
+#k3
+{
+text-align: center;
+margin-left: 670px;
+margin-top: 440px;
+position: absolute;
+width: 260px;
+height: 120px;
+box-shadow: 7px 7px 5px rgba(0,0,0,0.6);
+position: absolute;
+background-color: white;
+color: black;
+}
+#shruft
+{
+ font-family: BOOKMAN OLD STYLE;
+ font-size: 15px;
+}
+#ovochi
+{
+float: left;
+width: 650px;
+height: 550px;
+background-color: white;
+position: absolute;
+margin-top: 830px;
+}
+#ov
+{
+position: absolute;
+float: left;
+width: 650px;
+height: 380px;
+background-image: url(11.jpg);
+}
+#ov1
+{
+position: absolute;
+float: left;
+width: 650px;
+height: 380px;
+margin-top: 390px;
+}
+#size
+{
+color: #81BB44;
+font-size: 30px;
+text-decoration: none;
+}
+#id
+{
+height: 30px;
+width: 140px;
+text-align:center;
+}
+input
+{
+height: 30px;
+margin-top:6px;
+}
+#top
+{
+padding-top:8px;
+}
+#div
+{
+position: absolute;
+width: 280px;
+height: 500px;
+margin-top: 830px;
+margin-left: 670px;
+}
+#kapusta
+{
+float: left;
+width: 650px;
+height: 550px;
+background-color: white;
+position: absolute;
+margin-top: 1420px;
+}
+#ka
+{
+position: absolute;
+float: left;
+width: 650px;
+height: 380px;
+background-image: url(113.jpg);
+}
+#dush
+{
+float: left;
+width: 180px;
+height: 50px;
+position: absolute;
+margin-top: 1450px;
+margin-left: 730px;
+}
+#makarun
+{
+float: left;
+width: 650px;
+height: 550px;
+background-color: white;
+position: absolute;
+margin-top: 2020px;
+}
+#blok_fix
+{
+width: 200px;
+height: 250px;
+position: absolute;
+margin-top: 1150px;
+margin-left: 550px;
+}
+
+#ma
+{
+position: absolute;
+float: left;
+width: 650px;
+height: 380px;
+background-image: url(114.jpg);
+}
+#or
+{
+font-size: 30px;
+text-decoration: none;
+color: #FFB900  ;
+}
+#drink
+{
+float: left;
+width: 650px;
+height: 550px;
+background-color: white;
+position: absolute;
+margin-top: 2620px;
+}
+#drin
+{
+position: absolute;
+float: left;
+width: 650px;
+height: 380px;
+background-image: url(115.jpg);
+}
+#dr
+{
+font-size: 30px;
+text-decoration: none;
+color: #95DFF3  ;
+}
+#slaid
+{
+position: absolute;
+width: 250px;
+height: 250px;
+background-color: gray;
+margin-top: 1480px;
+margin-left: 690px;
+}
+#size6
+{
+position: absolute;
+font-size: 20px;
+text-decoration: none;
+margin-left: 20px;
+color: white; 
+width: 650px;
+}
+
+   .containerSlider
+          {
+               max-width: 30%;
+               position: relative;
+               margin: auto;
+               height: 300px;
+			   width: 300px;
+			   top: 125%;
+			   left: 35%;
+            
+          }
+          .containerSlider .item img {
+               width: 250px;
+               height: 300px;
+               border: none !important;
+               box-shadow: none !important;
+               object-fit: cover;
+          }
+          .containerSlider .prev, .containerSlider .next
+          {
+               cursor: pointer;
+               position: absolute;
+               width: auto;
+               margin-top: -165px;
+               padding: 16px;
+               color: white;
+               font-weight: bold;
+               font-size: 18px;
+               transition: 0.6s ease;
+               border-radius: 0 3px 3px 0;
+          }
+          .containerSlider .next
+          {
+               left: 210px;
+               border-radius: 0 3px 3px 0;
+          }
+          .containerSlider .prev:hover,
+          .containerSlider .next:hover
+          {
+               background-color: rgba(0,0,0,0.8);
+          }
+          .sliderDots
+          {
+               margin-left: 220px;
+			   width: 200px;
+          }
+
+          .dots_Item{
+               cursor: pointer;
+               height: 12px;
+               width: 12px;
+               margin: 0 2px;
+               background-color: #ddd;
+               border-radius: 50%;
+               display: inline-block;
+               transition: background-color 0.6s ease;
+			   margin-top: 350px;;
+          }
+          .active, .dots_Item:hover{
+               background-color: #aaaaaa;
+
+          }
+          .containerSlider .item
+          {
+               -webkit-animation-name: fade;
+               -webkit-animation-duration: 1.5s;
+               animation-name: fade;
+               animation-duration: 1.5s;
+          }
+          @-webkit-keyframes fade {
+               from{opacity: .4}
+               to{opacity: 1}
+          }
+          @keyframes fade {
+               from{opacity: .4}
+               to{opacity: 1}
+          }
+
+    #arrowTop {
+      height: 35px;
+      width: 35px;
+      color: green;
+      position: fixed;
+      top: 10px;
+      left: 1200px;
+      cursor: pointer;
+    }
+
+    #arrowTop::before {
+      content: '▲';
+    }
+	.progress-container {
+  width: 20px;
+  height: 100%;
+  margin-left: 98%;
+  background: #ccc;
+  position: fixed;
+}
+
+.progress-bar {
+  height: 100%;
+  background: #A6ACAF;
+  width: 20px;
+}
+
+</style>
+
+     <script>
+          var slideIndex = 1;
+          showSlides(slideIndex);
+
+          function plusSlide() {
+              showSlides(slideIndex+=1);
+          }
+          function minusSlide() {
+              showSlides(slideIndex -= 1);
+          }
+
+          function currentSlide(x) {
+              showSlides(slideIndex = x);
+          }
+
+          function showSlides(x)
+          {
+              var i;
+              var slides = document.getElementsByClassName("item");
+              var dots = document.getElementsByClassName("dots_Item");
+              if(x > slides.length)
+              {
+                  slideIndex = 1;
+              }
+              if(x < 1)
+              {
+                  slideIndex = slides.length;
+              }
+              for(i = 0; i < slides.length; i++)
+              {
+                  slides[i].style.display = "none";
+              }
+              for(i = 0; i < dots.length; i++)
+              {
+                  dots[i].className = dots[i].className.replace(" active", "");
+              }
+              slides[slideIndex - 1].style.display = "block";
+              dots[slideIndex - 1].className += " active";
+          }
+
+     </script>
+
+   
+</head>
+<body>
+<div class="progress-container">
+    <div class="progress-bar" id="myBar"></div>
+  </div>  
+
+<button id="arrowTop" hidden></button>
+
+  <script>
+
+    arrowTop.onclick = function() {
+      window.scrollTo(pageXOffset, 0);
+    };
+
+    window.addEventListener('scroll', function() {
+      arrowTop.hidden = (pageYOffset < document.documentElement.clientHeight);
+    });
+  </script>
+
+<p><a name="top"></a></p>
+<div id="heder">
+<br/>
+<p  align="center"><big>ДУШЕВНАЯ КУХНЯ</big>&nbsp;&nbsp;<button id="but"><a href="s.html">ГЛАВНАЯ</a></button><button id="but"><a href="eat_the_world.html">ЕДА СО ВСЕГО МИРА</a></button><button id="but"><a href="event.html">СОБИТЫЯ</a></button><button id="but"><a href="sweets.html">СЛАДКОЕ</a></button><button id="but"><a  href="green_food.html">ЗДОРОВАЯ ЕДА</a></button></p>
+
+</div>
+<div id="body">
+<div class="layer1" float="left">
+<img src="https://e1.edimdoma.ru/data/posts/0002/0797/20797-ed4_wide.jpg?1495010067" width="400px" height="380px"></div>
+ <div id="blok2">
+   <br/><br/><br/><br/><br/><br/>
+   <a  href="eat_the_world.html">ЕДА СО ВСЕГО МИРА</a><br/><br/>
+   <p>ЛУЧШАЯ УЛИЧНАЯ ЕДА СО ВСЕГО МИРА: ЕДЕМ В КУЛИНАРНОЕ КРУГОСВЕТНОЕ ПУТЕШЕСТВИЕ!</p>
+  </div>
+<div id="block3"> </div>
+<div id="k1">
+<br/>
+<font id="shruft" color="gray"><a  href="green_food.html">ЗДОРОВАЯ&nbsp;ЕДА</a></font>
+<br/><h2>Все покрыто <br/>зеленью</h2>
+</div>
+<div id="k2">
+<br/>
+<a  href="event.html"><font id="shruft" color="gray">СОБЫТИЯ</font></a>
+<br/><h2>Сладкий день<br/>календаря</h2>
+</div>
+<div id="k3">
+<br/>
+<a href="sweets.html"><font id="shruft" color="gray">СЛАДКОЕ</font></a>
+<br/><h2>Как сделать <br/>мороженое</h2>
+</div>
+<div id="ovochi">
+<div id="ov"></div>
+<div id="ov1"><a  id="size" href="kolir.html">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<big>50 оттенков пищи</big></a>
+<p id="shruft">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Цветовая гамма продуктов питания творит чудеса. Зеленая пища <br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;избавит от стресса, нормализует давление. Синяя - успокоит, снимет <br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;боль в глазах. А белая - грозит лишним весом ...
+
+</p>
+</div>
+</div>
+<div id="div">
+ <form name = "reg" method="GET" onsubmit="perevirka();">
+<h3><p align = "center" id="top"> Registration</p></h3>
+ <p align="left">Login :&emsp;&emsp;&ensp;&ensp;&ensp;<input type = "text" name="login" ></br>
+ Password :&emsp;&emsp;<input type="password" name = "pass"> </br>
+ RePassword : &ensp;<input type="password" name = "Repass"  ></br>
+ E - mail :&emsp;&emsp;&ensp;<input type="text" name = "email"></br>
+ Firstname  : &emsp;&ensp;<input type="text" name = "Firstname"></br>
+ Lastname  : &emsp;&ensp;<input type="text" name = "Lastname"></br>
+ Surname :&emsp;&emsp;<input type="text" name="Patronymic"></br>
+ Gender :&emsp;&emsp;&emsp;<input type="checkbox" name="W">Woman<input type="checkbox" name="M">Man</br>
+ About :&emsp;&emsp;&emsp;<input type="text" name = "about"></br>
+ Age : &emsp;&emsp;&emsp;&ensp;<input type="number" name="age" ></p><br/>
+<p align = "center"><input type = "submit" name="Send" value="Send" id="id"></p>
+ </form>
+  </div>
+<div id="kapusta">
+<div id="ka"></div>
+<div id="ov1"><a  href="kapusta.html">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<big id="size">О пользе капусты</big></a>
+<p id="shruft">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Овощи являются одним из самых принципиальных продуктов в <br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;человеческом рационе.Рассмотрим, какова пищевой ценность кбжу<br/>&nbsp;&nbsp;&nbsp;&nbsp; капусты и в чем заключается польза и вред капусты белокочанной<br/>&nbsp;&nbsp;&nbsp;&nbsp; для организма.
+</p>
+</div>
+</div>
+<div id="dush"></div>
+
+
+<div id="makarun">
+<div id="ma"></div>
+<div id="ov1"><a   href="makarun.html">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<big id="or">Секрет шоколадных макарун</big></a>
+<p id="shruft">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;0 правил идеальных миндальных Макарон - советы <br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;по приготовлению - Французские макарунами
+</p>
+</div>
+</div>
+<div id="drink">
+<div id="drin"></div>
+<div id="ov1"><a href="winter_drink.html">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<big  id="dr">10 зимних напитков</big></a>
+<p id="shruft">&nbsp;&nbsp;&nbsp;Приближается зима, и люди, чтобы согреться покупают теплую одежду,<br/>&nbsp;&nbsp; шали, пледы. Но при этом многие даже не подозревают, что существует<br/>&nbsp;&nbsp; «зимний рацион» питания, который точно не даст замёрзнуть. Мы собрали <br/>&nbsp;&nbsp;&nbsp;«десятку» оригинальный зимних напитков, которые согреют даже в самые<br/>&nbsp;&nbsp; холодные дни. 
+</p>
+</div>
+</div>
+<div id="blok_fix">
+ <div class="containerSlider">
+  <p id="size6">#ДУШЕВНАЯКУХНЯ</p>
+          <div class="item">
+               <img src="1.jpg" alt="Kartynka 1"/>
+          </div>
+          <div class="item">
+               <img src="2.jpg" alt="Kartynka 2"/>
+          </div>
+          <div class="item">
+               <img src="3.jpg" alt="Kartynka 3"/>
+          </div>
+		    <div class="item">
+               <img src="4.jpg" alt="Kartynka 3"/>
+          </div>
+		    <div class="item">
+               <img src="5.jpg" alt="Kartynka 3"/>
+          </div>
+		  
+          <a class="prev" onclick="minusSlide()">&#10094</a>
+          <a class="next" onclick="plusSlide()">&#10095</a>
+     </div>
+     <div class="sliderDots">
+          <span class="dots_Item" onclick="currentSlide(1)"></span>
+          <span class="dots_Item" onclick="currentSlide(2)"></span>
+          <span class="dots_Item" onclick="currentSlide(3)"></span>
+		  <span class="dots_Item" onclick="currentSlide(4)"></span>
+		  <span class="dots_Item" onclick="currentSlide(5)"></span>
+     </div>
+     <script>
+         showSlides(slideIndex);
+     </script>
+</div>
+
+<script>
+// When the user scrolls the page, execute myFunction 
+window.onscroll = function() {myFunction()};
+
+function myFunction() {
+  var winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+  var height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+  var scrolled = (winScroll / height) * 100;
+  document.getElementById("myBar").style.height = scrolled + "%";
+}
+</script>
+
+</body>
+</html>

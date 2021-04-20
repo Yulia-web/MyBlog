@@ -1,0 +1,388 @@
+<html>
+<head>
+<script>
+function perevirka()
+{
+let log = document.forms.reg;
+var log1 = log.pass.value;
+var log2 = log.Repass.value;
+for(var i = 0;i<log1.length;i++)
+{
+if(log1[i] != log2[i])
+{
+alert("password dont are the same");
+break;
+}
+}
+if(log.login.value.length == 0)
+{
+alert("Login is empty");
+}
+if(log.pass.value.length == 0)
+{
+alert("Password is empty");
+}
+var len = log.pass.value.length; 
+alert(len);
+if(len > 5 && len < 16)
+{
+alert("login is too long or too short");
+}
+let symbol = "!@#$?/\\'\" }{[]:;^%+=-()";
+for(let i = 0;i<log.pass.value.length;i++)
+{
+let spF = false;
+for(var j = 0;j<symbol.length;j++)
+{
+if(log1[i] == symbol[j])
+{
+alert("Password special symb found");
+spF = true;
+break;
+}
+}
+if(spF)
+         break;	
+}
+if(log.age.value < 0)
+{
+alert("Age dont can be smoller 0");
+}
+var woman = log.W.checked;
+var man = log.M.checked;
+if(woman == true && man == true)
+{
+alert("you cannot select two genders at a time");
+}
+
+}  
+</script>
+<style>
+#heder
+{
+background-color: white;
+height: 80px;
+width: 100%;
+}
+body
+{
+background-color: #f2f2f2;
+}
+#but
+{
+font-size: 12px;
+border: medium none; 
+background-image: none; 
+margin-left: 50px;
+background-color: white;
+}
+p
+{
+font: normal small-caps 120%/120% fantasy 
+font-size: 10px;
+}
+#f1
+{
+height: 100%;
+width: 30%;
+position: absolute;
+}
+#body
+{
+position: relative;
+width: 950px;
+height: 100%;
+margin-left: 160px;
+}
+.layer1
+{
+    float: left; 
+}
+a
+{
+color: black;
+}
+#blok2
+{
+position: absolute;
+text-align: center;
+width: 400px;
+height: 380px;
+margin-left: 500px;
+}
+#block3
+{
+position: absolute;
+width: 950px;
+height: 300px;
+background-image: url(1.png);
+margin-top: 480px;
+}
+#k1
+{
+text-align: center;
+margin-left: 20px;
+margin-top: 440px;
+position: absolute;
+width: 260px;
+height: 120px;
+box-shadow: 7px 7px 5px rgba(0,0,0,0.6);
+position: absolute;
+background-color: white;
+color: black;
+}
+#k2
+{
+text-align: center;
+margin-left: 350px;
+margin-top: 440px;
+position: absolute;
+width: 260px;
+height: 120px;
+box-shadow: 7px 7px 5px rgba(0,0,0,0.6);
+position: absolute;
+background-color: white;
+color: black;
+}
+#k3
+{
+text-align: center;
+margin-left: 670px;
+margin-top: 440px;
+position: absolute;
+width: 260px;
+height: 120px;
+box-shadow: 7px 7px 5px rgba(0,0,0,0.6);
+position: absolute;
+background-color: white;
+color: black;
+}
+#shruft
+{
+ font-family: BOOKMAN OLD STYLE;
+ font-size: 15px;
+}
+#ovochi
+{
+float: left;
+width: 650px;
+height: 550px;
+background-color: white;
+position: absolute;
+margin-top: 830px;
+}
+#ov
+{
+position: absolute;
+float: left;
+width: 650px;
+height: 380px;
+background-image: url(11.jpg);
+}
+#ov1
+{
+position: absolute;
+float: left;
+width: 650px;
+height: 380px;
+margin-top: 390px;
+}
+#size
+{
+color: #81BB44;
+font-size: 30px;
+text-decoration: none;
+}
+#id
+{
+height: 30px;
+width: 140px;
+text-align:center;
+}
+input
+{
+height: 30px;
+margin-top:6px;
+}
+#top
+{
+padding-top:8px;
+}
+#div
+{
+position: absolute;
+width: 280px;
+height: 500px;
+margin-top: 830px;
+margin-left: 670px;
+}
+#kapusta
+{
+float: left;
+width: 650px;
+height: 550px;
+background-color: white;
+position: absolute;
+margin-top: 1420px;
+}
+#ka
+{
+position: absolute;
+float: left;
+width: 650px;
+height: 380px;
+background-image: url(3.jpg);
+}
+#dush
+{
+float: left;
+width: 180px;
+height: 50px;
+position: absolute;
+margin-top: 1450px;
+margin-left: 730px;
+}
+#makarun
+{
+float: left;
+width: 650px;
+height: 550px;
+background-color: white;
+position: absolute;
+margin-top: 2020px;
+}
+#ma
+{
+position: absolute;
+float: left;
+width: 650px;
+height: 380px;
+background-image: url(4.jpg);
+}
+#or
+{
+font-size: 30px;
+text-decoration: none;
+color: #FFB900  ;
+}
+#drink
+{
+float: left;
+width: 650px;
+height: 550px;
+background-color: white;
+position: absolute;
+margin-top: 2620px;
+}
+#drin
+{
+position: absolute;
+float: left;
+width: 650px;
+height: 380px;
+background-image: url(5.jpg);
+}
+#dr
+{
+font-size: 30px;
+text-decoration: none;
+color: #95DFF3  ;
+}
+#t
+{
+width: 50px;
+height: 50px;
+position: absolute;
+margin-top: 3220px;
+float: left;
+border-radius: 60px;
+text-decoration: none;
+
+}
+</style>
+ 
+</head>
+<body>
+<p><a name="top"></a></p>
+<div id="heder">
+<br/>
+<p  align="center"><big>ДУШЕВНАЯ КУХНЯ</big><button id="but">ГЛАВНАЯ</button><button id="but">ЕДА СО ВСЕГО МИРА</button><button id="but">СОБИТЫЯ</button><button id="but">СЛАДКОЕ</button><button id="but">ЗДОРОВАЯ ЕДА</button></p>
+
+</div>
+<div id="body">
+<div class="layer1" float="left">
+<img src="https://e1.edimdoma.ru/data/posts/0002/0797/20797-ed4_wide.jpg?1495010067" width="400px" height="380px"></div>
+ <div id="blok2">
+   <br/><br/><br/><br/><br/><br/>
+   <a  href="#">ЕДА СО ВСЕГО МИРА</a><br/><br/>
+   <p>ЛУЧШАЯ УЛИЧНАЯ ЕДА СО ВСЕГО МИРА: ЕДЕМ В КУЛИНАРНОЕ КРУГОСВЕТНОЕ ПУТЕШЕСТВИЕ!</p>
+  </div>
+<div id="block3"> </div>
+<div id="k1">
+<br/>
+<a  href="#"><font id="shruft" color="gray">ЗДОРОВАЯ&nbsp;ЕДА</font></a>
+<br/><h2>Все покрыто <br/>зеленью</h2>
+</div>
+<div id="k2">
+<br/>
+<a  href="#"><font id="shruft" color="gray">СОБЫТИЯ</font></a>
+<br/><h2>Сладкий день<br/>календаря</h2>
+</div>
+<div id="k3">
+<br/>
+<a  href="#"><font id="shruft" color="gray">СЛАДКОЕ</font></a>
+<br/><h2>Как сделать <br/>мороженое</h2>
+</div>
+<div id="ovochi">
+<div id="ov"></div>
+<div id="ov1"><a  id="size" href="#">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<big>50 оттенков пищи</big></a>
+<p id="shruft">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Цветовая гамма продуктов питания творит чудеса. Зеленая пища <br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;избавит от стресса, нормализует давление. Синяя - успокоит, снимет <br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;боль в глазах. А белая - грозит лишним весом ...
+</p>
+</div>
+</div>
+<div id="div">
+ <form name = "reg" method="GET" onsubmit="perevirka();">
+<h3><p align = "center" id="top"> Registration</p></h3>
+ <p align="left">Login :&emsp;&emsp;&ensp;&ensp;&ensp;<input type = "text" name="login" ></br>
+ Password :&emsp;&emsp;<input type="password" name = "pass"> </br>
+ RePassword : &ensp;<input type="password" name = "Repass"  ></br>
+ E - mail :&emsp;&emsp;&ensp;<input type="text" name = "email"></br>
+ Firstname  : &emsp;&ensp;<input type="text" name = "Firstname"></br>
+ Lastname  : &emsp;&ensp;<input type="text" name = "Lastname"></br>
+ Surname :&emsp;&emsp;<input type="text" name="Patronymic"></br>
+ Gender :&emsp;&emsp;&emsp;<input type="checkbox" name="W">Woman<input type="checkbox" name="M">Man</br>
+ About :&emsp;&emsp;&emsp;<input type="text" name = "about"></br>
+ Age : &emsp;&emsp;&emsp;&ensp;<input type="number" name="age" ></p><br/>
+<p align = "center"><input type = "submit" name="Send" value="Send" id="id"></p>
+ </form>
+  </div>
+<div id="kapusta">
+<div id="ka"></div>
+<div id="ov1"><a  id="size" href="#">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<big>О пользе капусты</big></a>
+<p id="shruft">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Овощи являются одним из самых принципиальных продуктов в <br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;человеческом рационе.Рассмотрим, какова пищевой ценность кбжу<br/>&nbsp;&nbsp;&nbsp;&nbsp; капусты и в чем заключается польза и вред капусты белокочанной<br/>&nbsp;&nbsp;&nbsp;&nbsp; для организма.
+</p>
+</div>
+</div>
+<div id="dush">#ДУШЕВНАЯКУХНЯ</div>
+<div id="makarun">
+<div id="ma"></div>
+<div id="ov1"><a  id="or" href="#">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<big>Секрет шоколадных макарун</big></a>
+<p id="shruft">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;0 правил идеальных миндальных Макарон - советы <br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;по приготовлению - Французские макарунами
+</p>
+</div>
+</div>
+<div id="drink">
+<div id="drin"></div>
+<div id="ov1"><a  id="dr" href="#">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<big>10 зимних напитков</big></a>
+<p id="shruft">&nbsp;&nbsp;&nbsp;Приближается зима, и люди, чтобы согреться покупают теплую одежду,<br/>&nbsp;&nbsp; шали, пледы. Но при этом многие даже не подозревают, что существует<br/>&nbsp;&nbsp; «зимний рацион» питания, который точно не даст замёрзнуть. Мы собрали <br/>&nbsp;&nbsp;&nbsp;«десятку» оригинальный зимних напитков, которые согреют даже в самые<br/>&nbsp;&nbsp; холодные дни. 
+</p>
+</div>
+
+</div>
+<div id="t"><p><a href="#top"><img src="https://cdn.icon-icons.com/icons2/906/PNG/128/up-arrow-5_icon-icons.com_69823.png" height="50px" width="50px"></a></p> </div>
+
+</div>
+
+
+</body>
+</html>
